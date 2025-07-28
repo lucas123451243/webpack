@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L&C</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" href="scrip.js">
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="menu container">
+            <a href="#" class="logo">L&C</a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="SobreNosotros.html">Nosotros</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                    
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="images/car.svg" id="img-carrito" alt="">
+                        <div id="carrito">
+                            <table id="lista-carrito" >
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header-content container">
+            <div class="header-img">
+                <img src="images/right.png" alt="">
+            </div>
+            <div class="header-txt">
+                <h1>Ofertas especiales</h1>
+                <p>Estrena Las Mejores Prendas</p>
+                <a href="#" class="btn-1">Informacion</a>
+            </div> 
+        </div>
+     
+    </header>
+
+    <section class="ofert container">
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="images/f1.png" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>Producto 1</h3>
+                <a href="#" class="btn-2">Informacion</a>
+            </div>
+        </div>
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="images/f2.png" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>Producto 2</h3>
+                <a href="#" class="btn-2">Informacion</a>
+            </div>
+        </div>
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="images/f3.png" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>Producto 3</h3>
+                <a href="#" class="btn-2">Informacion</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="products container" id="lista-1">
+
+        <h2>Productos</h2>
+
+        <div class="product-content">
+            
+            <div class="product">
+                <img src="images/1.png" alt="">
+                <div class="product-txt">
+                    <h3>Remera negra</h3>
+                    <p>Calidad Premium</p>
+                    <p class="precio">$20.000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/2.png" alt="">
+                <div class="product-txt">
+                    <h3>Campera impermeable</h3>
+                    <p>Calidad Premium</p>
+                    <p>Talla M</p>
+                    <p class="precio">$20.000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/3.png" alt="">
+                <div class="product-txt">
+                    <h3>Campera invernal</h3>
+                    <p>Calidad Premium</p>
+                    <p>tela polar, Talla M</p>
+                    <p class="precio">$20.000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al Carrito</a>
+                </div>
+            </div>
+        
+            <div class="product">
+                <img src="images/4.png" alt="">
+                <div class="product-txt">
+                    <h3>Camisa azul</h3>
+                    <p>Calidad Premium</p>
+                    <p>Talla M</p>
+                    <p class="precio">$20.000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/5.png" alt="">
+                <div class="product-txt">
+                    <h3>Camisa negra</h3>
+                    <p>Calidad Premium</p>
+                    <p>Talla M</p>
+                    <p class="precio">$20.000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar al Carrito</a>
+                </div>
+            </div>
+    
+            <div class="product">
+                <img src="images/6.png" alt="">
+                <div class="product-txt">
+                    <h3>Invernal</h3>
+                    <p>Calidad Premium</p>
+                    <p>tela polar, Talla M</p>
+                    <p class="precio">$20.000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar al Carrito</a>
+                </div>
+            </div>
+
+             <div class="product">
+                <img src="gorro marron claro.png" alt="">
+                <div class="product-txt">
+                    <h3>Gorro de lana Marron Claro</h3>
+                    <p>Calidad Premium</p>
+                    <p>Adulto</p>
+                    <p class="precio">$6.000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="gorro gris.png" alt="">
+                <div class="product-txt">
+                    <h3>Gorra de lana Gris</h3>
+                    <p>Calidad Premium</p>
+                    <p>Adulto</p>
+                    <p class="precio">$5.000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="gorro oscuro.png" alt="">
+                <div class="product-txt">
+                    <h3>Gorra de Marron Oscuro</h3>
+                    <p>Calidad Premium</p>
+                    <p>Adulto</p>
+                    <p class="precio">$5.500</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar al Carrito</a>
+                </div>
+            </div>
+        
+        </div>
+
+    </main>
+
+    <section class="icons container">
+
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="images/i1.svg" alt="">
+            </div>
+            <div class="icon-txt">
+                <h3>L&C</h3>
+                <p>
+                    En L&C, creemos en el poder del movimiento y la comodidad. 
+                    Ya sea que busques ropa para 
+                    entrenar, accesorios para tu rutina o simplemente algo que te 
+                    haga sentir bien, acá lo vas a encontrar".
+                </p>
+            </div>
+        </div>
+
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="images/i2.svg" alt="">
+            </div>
+            <div class="icon-txt">
+                <h3>L&C</h3>
+                <p>
+                    En L&C, diseñamos pensando en vos: en tu ritmo, tu energía y tu bienestar.
+Desde ropa funcional hasta detalles que realzan tu día, tenemos eso que te hace sentir cómoda y auténtica, siempre.
+                </p>
+            </div>
+        </div>
+
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="images/i3.svg" alt="">
+            </div>
+            <div class="icon-txt">
+                <h3>L&C</h3>
+                <p>
+                    En L&C, creemos que comodidad y estilo pueden ir de la mano.
+Ya sea para entrenar, relajarte o enfrentar tu día, tenemos lo que necesitás para sentirte bien y verte mejor.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog container">
+
+        <div class="blog-1">
+            <img src="images/b1.jpg" alt="">
+            <h3>Accesorios.</h3>
+            <p>
+               Pequeñas piezas, grandes diferencias.  
+            </p>
+        </div>
+
+        <div class="blog-1">
+            <img src="images/b2.jpg" alt="">
+            <h3>Elegancia.</h3>
+            <p>
+                Estilo que fluye con vos. 
+            </p>
+        </div>
+
+        <div class="blog-1">
+            <img src="images/b3.jpg" alt="">
+            <h3>Comodidad.</h3>
+            <p>
+                Comodidad que no renuncia al buen gusto.
+            </p>
+        </div>
+
+    </section>
+
+ 
+
+    <footer class="footer">
+
+        <div class="footer-content container">
+            
+            <div class="link">
+                <h3>Informacion de la Empresa</h3>
+                <ul>
+                    <li><a href="#">lucascardozo.43760755@gmail.com</a></li>
+                    <li><a href="#">+54 9 387 611-8621</a></li>
+                    <li><a href="#">Consolidando estilo y calidad desde 2020</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="Nosotros.html">Nosotros</a></li>
+                    <li><a href="#">Politica y Privacidad</a></li>
+                    <li><a href="Terminos y condiciones.html">Terminos y Condiciones</a></li>
+                    <li><a href="Desarrollador.html">Programador</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Productos</h3>
+                <ul>
+                    <li><a href="#" class="ri-t-shirt-line">___Remeras</a></li>
+                    <li><a href="#" class="ri-t-shirt-line">___Gorros</a></li>
+                    <li><a href="#" class="ri-t-shirt-line">___Zapatillas</a></li>
+                    <li><a href="#" class="ri-t-shirt-line">___Camperas</a></li>
+                    <li><a href="#" class="ri-t-shirt-line">___Guantes</a></li>
+                    <li><a href="#" class="ri-t-shirt-line">___Medias</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Accesorios</h3>
+                <ul>
+                    <li><a href="#" class="ri-weight-line">___Relojes</a></li>
+                    <li><a href="#" class="ri-weight-line">___Termos</a></li>
+                    <li><a href="#" class="ri-weight-line">___Mates</a></li>
+                    <li><a href="#" class="ri-weight-line">___Pulseras</a></li>
+                    <li><a href="#" class="ri-weight-line">___Billeteras</a></li>
+                    <li><a href="#" class="ri-weight-line">___Anteojos</a></li>
+                </ul>  
+            </div>
+
+            <div class="link">
+                <h3>Siguenos</h3>
+                <ul>
+                    <li><a href="#" class="ri-instagram-line">___Instagram</a></li>
+                    <li><a href="//api.Whatsapp.com/send?phone=3876118621" class="ri-whatsapp-fill">___Whatsapp</a></li>
+                    <li><a href="#" i class="ri-linkedin-fill">___Linkedin</a></li>
+                    <li><a href="#" class="ri-github-fill">___Github</a></li>
+                </ul>
+                
+            </div>
+
+        </div>
+
+    </footer>
+    
+</body>
+</html>

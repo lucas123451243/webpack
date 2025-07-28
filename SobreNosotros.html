@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sobre Nosotros</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      font-family: Arial, sans-serif;
+    }
+
+    .contenido {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Fondo principal */
+    .fondo {
+      background-image: url(imagen\ hombre\ 2.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+
+    .fondo .contenido {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #f5f5f5;
+      font-size: 3rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    /* Sección "Ofrecemos" */
+    .seccion {
+      padding: 80px 0;
+      background-color: #f5f5f5;
+    }
+
+    .fila {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 80px;
+      gap: 15%;
+    }
+
+    .fila:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .imagen {
+      flex: 1;
+      max-width: 550px;
+    }
+
+    .imagen img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .texto {
+      flex: 1;
+      max-width: 500px;
+    }
+
+    .texto h3 {
+      font-size: 2.5rem;
+      color: #222;
+      margin-bottom: 15px;
+    }
+
+    .texto p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    /* Carrusel */
+    .carrusel-container {
+      overflow: hidden;
+      border-radius: 5px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      margin: 10px 0;
+      position: relative;
+    }
+
+    .carrusel {
+      display: flex;
+      animation: girarCarrusel 12s linear infinite;
+      width: calc(20% * 10); /* 10 imágenes (5 + 5 duplicadas) */
+    }
+
+    .slide {
+      min-width: 20%;
+      flex-shrink: 0;
+    }
+
+    .slide img {
+      width: 70%;
+      display: block;
+      border-radius: 10px;
+      margin: auto;
+    }
+
+    @keyframes girarCarrusel {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-200%);
+      }
+    }
+
+    
+    /* Footer */
+    footer {
+      background-color: #000;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    footer h2 {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    footer p {
+      font-size: 1rem;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 168px) {
+      .fila {
+        flex-direction: column !important;
+        gap: 20px;
+      }
+
+      .imagen, .texto {
+        width: 30%;
+        max-width: 30%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sección principal -->
+  <div class="fondo">
+    <div class="contenido">
+      <h1>Sobre Nosotros</h1>
+      <a href="index.html">Pagina Principal</a>
+    </div>
+  </div>
+
+  <!-- Sección "Ofrecemos" -->
+  <div class="seccion">
+    <div class="contenido">
+      <div class="fila">
+        <div class="imagen">
+          <img src="Estilo.jpg" alt="Imagen 1">
+        </div>
+        <div class="texto">
+          <h3>Estilo moderno y positivo</h3>
+          <p>
+            Somos una empresa joven con ideas frescas y mucha energía.
+            Nos dedicamos a ofrecer productos de calidad que se adaptan a tu estilo.
+            Creemos en el trabajo bien hecho, la cercanía con la gente y la innovación.
+            Cada detalle está pensado para darte la mejor experiencia.
+            Queremos crecer junto a vos, construyendo confianza día a día.
+          </p>
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="imagen">
+          <img src="mision.jpg" alt="Imagen 2">
+        </div>
+        <div class="texto">
+          <h3>Mision</h3>
+          <p>
+            Crear experiencias visuales, digitales y funcionales que conecten con las personas.
+            Diseñar con propósito, ofrecer contenido de calidad y brindar soluciones accesibles para quienes buscan estilo, identidad y confianza.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="seccion">
+    <div class="contenido">
+      <div class="fila">
+        <div class="imagen">
+          <img src="cafe 2.jpg" alt="Imagen 1">
+        </div>
+        <div class="texto">
+          <h3>Vision</h3>
+          <p>
+            Ser una marca referente en innovación creativa, diseño auténtico y atención cercana.
+            Inspirar a otros a crecer con nosotros, destacándonos por nuestra calidad, coherencia visual y compromiso real con cada persona.
+          </p>
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="imagen">
+          <img src="imagen productos 3.jpg" alt="Imagen 2">
+        </div>
+        <div class="texto">
+          <h3>Valores</h3>
+          <p>Creatividad: Nos gusta pensar distinto, crear con estilo y romper moldes.</p>
+          <p>Autenticidad: Lo que ves es lo que somos, sin disfraces ni fórmulas vacías.</p>
+          <p>Calidad: Desde lo visual hasta lo técnico, cuidamos cada detalle.</p>
+          <p>Cercanía: Escuchamos, respondemos y crecemos con vos.</p>
+          <p>Compromiso: Todo lo que hacemos, lo hacemos bien o no lo hacemos.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carrusel automático -->
+  <div class="contenido">
+    <div class="carrusel-container">
+      <div class="carrusel" id="carrusel">
+        <div class="slide"><img src="cafe 5.jpg" alt="Imagen 1 del carrusel"></div>
+        <div class="slide"><img src="cafe 2.jpg" alt="Imagen 2 del carrusel"></div>
+        <div class="slide"><img src="cafe 3.jpg" alt="Imagen 3 del carrusel"></div>
+        <div class="slide"><img src="cafe 4.jpg" alt="Imagen 4 del carrusel"></div>
+        <div class="slide"><img src="cafe 6.jpg" alt="Imagen 5 del carrusel"></div>
+
+        <!-- Duplicados para bucle continuo -->
+        <div class="slide"><img src="cafe 5.jpg" alt="Imagen 1 duplicada"></div>
+        <div class="slide"><img src="cafe 2.jpg" alt="Imagen 2 duplicada"></div>
+        <div class="slide"><img src="cafe 3.jpg" alt="Imagen 3 duplicada"></div>
+        <div class="slide"><img src="cafe 4.jpg" alt="Imagen 4 duplicada"></div>
+        <div class="slide"><img src="cafe 6.jpg" alt="Imagen 5 duplicada"></div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Footer -->
+  <footer>
+    <h2>Contacto</h2>
+    <p>WhatsApp: +54 9 387 123 4567 | Email: contacto@tuempresa.com</p>
+    <p>© 2025 Tu Empresa - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
